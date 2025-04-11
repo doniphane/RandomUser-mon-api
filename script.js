@@ -15,6 +15,9 @@ async function fetchRandomUser() {
         document.getElementById('user-email').textContent = randomUser.email;
         document.getElementById('user-phone').textContent = randomUser.phone;
         document.getElementById('user-locate').textContent = randomUser.locate;
+        document.getElementById('user-portfolio').innerHTML = `<a href="${randomUser.portfolio}" target="_blank">${randomUser.portfolio}</a>`;
+
+
 
         loader.style.display = 'none';
         card.style.display = 'block';

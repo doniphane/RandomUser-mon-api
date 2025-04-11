@@ -69,6 +69,28 @@ h2 {
   transition: background 0.3s ease;
 }
 
+#user-portfolio a {
+  color: #00ccff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 0.2),
+    rgba(0, 255, 255, 0)
+  );
+  padding: 2px 6px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 195, 255, 0.3);
+  font-size: 12px;
+}
+
+#user-portfolio a:hover {
+  color: #00eaff;
+  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+
 .info p:hover {
   background: rgba(8, 210, 246, 0.1);
 }

@@ -21,7 +21,8 @@ app.get('/users', (req, res) => {
             email: 'noelson@yahoo.com',
             phone: '+33 6 12 34 56 78',
             img: 'https://randomuser.me/api/portraits/men/32.jpg',
-            locate: 'france'
+            locate: 'france',
+            portfolio: '####'
         },
         {
             name: 'Trules Doniphane',
@@ -29,7 +30,9 @@ app.get('/users', (req, res) => {
             email: 'trulesdoniphane98@gmail.com',
             phone: '+33 6 98 76 54 32',
             img: '/img/2.jpg',
-            locate: 'Reunion'
+            locate: 'Reunion',
+            portfolio: 'https://monportfolio2024.onrender.com/'
+
         },
         {
             name: 'Black Darkrai',
@@ -37,7 +40,8 @@ app.get('/users', (req, res) => {
             email: 'black@gail.com',
             phone: '+33 7 88 77 66 55',
             img: 'https://randomuser.me/api/portraits/men/70.jpg',
-            locate: 'Portugal'
+            locate: 'Portugal',
+            portfolio: '####'
         },
 
     ];
