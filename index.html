@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carte Utilisateur</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader">Chargement...</div>
+
+    <div class="user-card" id="user-card" style="display: none">
+      <div class="avatar-wrapper">
+        <img id="user-img" class="avatar" src="" alt="Avatar Utilisateur" />
+        <div class="flame"></div>
+      </div>
+      <div class="info">
+        <h2 id="user-name">Nom</h2>
+        <p><strong>Âge :</strong> <span id="user-age"></span></p>
+        <p><strong>Email :</strong> <span id="user-email"></span></p>
+        <p><strong>Téléphone :</strong> <span id="user-phone"></span></p>
+        <p><strong>Localisation :</strong> <span id="user-locate"></span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
