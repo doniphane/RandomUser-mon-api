@@ -1,4 +1,7 @@
-[![Vidéo démonstration](./img/api.png)]([https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID](https://youtu.be/_hlGs4TB1IQ))
+<video width="100%" controls>
+  <source src="https://github.com/doniphane/RandomUser-mon-api/blob/main/img/Api.mov" type="video/quicktime">
+  Votre navigateur ne supporte pas la vidéo.
+</video>
 
 # RandomUser API
 
