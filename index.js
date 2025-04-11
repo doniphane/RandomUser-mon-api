@@ -1,7 +1,11 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const app = express();
 const port = 3000;
+
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors());
 
@@ -24,7 +28,7 @@ app.get('/users', (req, res) => {
             age: 24,
             email: 'trulesdoniphane98@gmail.com',
             phone: '+33 6 98 76 54 32',
-            img: './img/2.jpg',
+            img: '/img/2.jpg',
             locate: 'Reunion'
         },
         {
@@ -35,54 +39,6 @@ app.get('/users', (req, res) => {
             img: 'https://randomuser.me/api/portraits/men/70.jpg',
             locate: 'Portugal'
         },
-        {
-            name: 'Sakura Yamamoto',
-            age: 29,
-            email: 'sakura.yama@example.com',
-            phone: '+81 90 1234 5678',
-            img: 'https://randomuser.me/api/portraits/women/21.jpg',
-            locate: 'Los Angeles'
-        },
-        {
-            name: 'Ethan Carter',
-            age: 31,
-            email: 'ethan.carter@mail.com',
-            phone: '+44 7911 123456',
-            img: 'https://randomuser.me/api/portraits/men/64.jpg',
-            locate: 'amerique Latine '
-        },
-        {
-            name: 'Lucie Dubois',
-            age: 26,
-            email: 'lucie.dubois@laposte.net',
-            phone: '+33 6 78 54 32 10',
-            img: 'https://randomuser.me/api/portraits/women/52.jpg',
-            locate: 'Australie'
-        },
-        {
-            name: 'Mohamed El Amrani',
-            age: 38,
-            email: 'mohamed.elamrani@gmail.com',
-            phone: '+212 6 45 23 87 90',
-            img: 'https://randomuser.me/api/portraits/men/90.jpg',
-            locate: 'Maurice'
-        },
-        {
-            name: 'Emily Johnson',
-            age: 22,
-            email: 'emily.johnson@example.com',
-            phone: '+1 202-555-0174',
-            img: 'https://randomuser.me/api/portraits/women/10.jpg',
-            locate: 'Italie'
-        },
-        {
-            name: 'Ivan Petrov',
-            age: 35,
-            email: 'ivan.petrov@rambler.ru',
-            phone: '+7 495 123 4567',
-            img: 'https://randomuser.me/api/portraits/men/88.jpg',
-            locate: 'Balie'
-        }
 
     ];
 
